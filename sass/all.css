@@ -486,7 +486,7 @@ body {
     display: none;
   }
   .container {
-    width: 347px;
+    max-width: 347px;
   }
   .banner {
     background-size: 375px 396px;
