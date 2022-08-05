@@ -414,12 +414,39 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 767px) {
+  .headerMenuRWD {
+    display: none;
+  }
+}
 @media (min-width: 376px) {
   .footerContact-m {
     display: none;
   }
 }
 @media (max-width: 767px) {
+  .header .header-box {
+    justify-content: center;
+  }
+  .header .headerMenu {
+    display: none;
+  }
+  .header .headerMenuRWD ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .header .headerMenuRWD ul li {
+    width: 48%;
+    padding: 12px 0;
+    border: 1px solid white;
+  }
+  .header .headerMenuRWD ul li a {
+    text-decoration: none;
+    color: white;
+  }
   .container {
     max-width: 720px;
   }

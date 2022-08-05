@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin header{
+    @media(min-width:767px){
+        @content;
+    }
+}
 @mixin mobile{
     @media (max-width:374px){
         @content;
@@ -14,6 +19,13 @@
     }
 }
 
+@include header{
+    .headerMenuRWD{
+        display: none;
+    }
+    }
+    
+
 @include footer{
     .footerContact-m{
         display: none;
@@ -21,6 +33,34 @@
 }
 
 @include pad{
+    .header{
+        .header-box{
+            justify-content: center;
+        }
+        .headerMenu{
+            display: none;
+        }
+        .headerMenuRWD{
+           ul{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            li{
+                width: 48%;
+                padding: 12px 0;
+                border: 1px solid white;
+                a{
+                    text-decoration: none;
+                    color:white;
+                    
+                }
+            }
+        } 
+        } 
+        
+    }
     .container{
         max-width: 720px;
     }
